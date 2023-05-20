@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact form</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Contact Form</h1><br>
+
+        <form id="input_container">
+            <label for="fName">Firstname</label>
+            <input type="text" name="fName" id="fName"><br>
+
+            <label for="lName">Lastname</label>
+            <input type="text" name="lName" id="lName"><br>
+
+            <label for="phone_No">Phonne Number</label>
+            <input type="number" name="phone_No" id="phone_No"><br><br><br>
+
+
+        </form>
+        <button onclick="submit()">Submit</button>
+
+
+    </div>
+    <br><br>
+    <div id="table_container">
+        <table id="table_container">
+            <thead>
+                <tr>
+                    <th class="table-head">Firstname</th>
+                    <th>Lastname</th>
+                    <th>Phone no.</th>
+                </tr>
+            </thead>
+            <tbody id="table_Body">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="edit_container">
+                <label for="fName">Firstname</label>
+                <input type="text" name="fName" id="save_fName" class="edit"><br>
+
+                <label for="lName">Lastname</label>
+                <input type="text" name="lName" id="save_lName" class="edit"><br>
+
+                <label for="phone_No">Phonne Number</label>
+                <input type="number" name="phone_No" id="save _phoneNo" class="edit"><br><br><br>
+
+                <button id="save_data">save</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="contact.js"></script>
+
+</body>
+
+</html>
